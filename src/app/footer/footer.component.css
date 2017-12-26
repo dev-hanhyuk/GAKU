@@ -1,0 +1,13 @@
+.footer-wrapper {
+    margin-top: 10%;
+    padding: 0;
+    background-color: #3F51B5;
+    height: 50vh;
+}
+
+.contact {
+    margin: 0;
+    padding-top: 40vh;
+    color: #fff;
+    text-align: center;
+}

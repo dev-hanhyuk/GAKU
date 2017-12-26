@@ -1,0 +1,19 @@
+<section class="product-list-wrapper">
+
+  <div class="product-list-desc">
+    <h3 class="product-list-desc-title">Welcome to GAKU(gPS-Ads-KR-Upskill) project!</h3>
+    <p>We have plenty of good beer recommendations for you. If you are reading this message, you are already tracked by gTag and this will gather your behavioral information by tracing your visits in this website.</p>
+  </div>
+
+  <mat-grid-list cols="4" rowHeight="200px">
+    <mat-grid-tile 
+      *ngFor="let product of products$ | async" 
+      [colspan]="1"
+      [rowspan]="1"
+      [class.selected]="product.id === selectedId"
+      [routerLink]="['/product', product.id]" 
+      class="grid-tile">
+      <img src={{product.image_url}} class="grid-tile-img" />
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

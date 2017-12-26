@@ -1,0 +1,7 @@
+<section class="thankyou-page-wrapper">
+  <h1 class="thankyou-letter">THANK YOU!</h1>
+  <mat-icon class="checkout-icon">done</mat-icon>
+  <div *ngIf="product$ | async as product">
+    <p class="checkout-letter">You just purchased our fantastic <em>"{{product.name}}"</em>!</p>
+  </div>
+</section>

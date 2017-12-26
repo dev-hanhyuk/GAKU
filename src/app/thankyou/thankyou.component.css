@@ -1,0 +1,23 @@
+.thankyou-page-wrapper {
+    margin: 0 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.thankyou-letter {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.checkout-icon {
+    font-size: 3rem;
+    color: #4CAF50;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.checkout-letter {
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.5);
+}

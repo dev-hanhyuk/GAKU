@@ -1,0 +1,26 @@
+<section class="product-detail-wrapper">
+  <div *ngIf="product$ | async as product">
+    <mat-grid-list cols="5" rowHeight="200px">
+      <mat-grid-tile [colspan]="3" [rowspan]="3">
+        <img src={{product.image_url}} class="product-detail-image" />
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="2">
+        <div class="product-detail">
+          <h1 class="product-detail-name">"{{product.name}}"</h1>
+          <h2 class="product-detail-price">$ {{product.price | number:'2.2-2'}}</h2>
+          <p class="product-detail-description">{{product.description}}</p>
+        </div>
+
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <button class="button-cart" [routerLink]="['/thankyou', product.id]">ADD TO CART</button>
+          <!-- <button class="button-style">ADD TO WISHLIST</button> -->
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+
+  </div>
+</section>

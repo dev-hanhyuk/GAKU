@@ -1,0 +1,12 @@
+* { font-family: 'Roboto', sans-serif; }
+
+.title-wrapper { margin-top: 3%; }
+
+.title { text-align: center; }
+
+nav { 
+    text-align: center; 
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+}
+
